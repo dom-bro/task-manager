@@ -1,0 +1,20 @@
+{
+  "name": "task-manager",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port=8080",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.3.0",
+    "koa": "^2.13.4",
+    "koa-router": "^12.0.0",
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.3",
+    "vite": "^3.0.7"
+  }
+}
