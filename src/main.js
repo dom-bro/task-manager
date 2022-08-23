@@ -7,6 +7,8 @@ import ElementPlus from 'element-plus'
 import axios from 'axios'
 import moment from 'moment'
 import { createRouter, createWebHistory } from 'vue-router'
+import { SERVER_PORT} from '../CONST.js'
+
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -17,6 +19,7 @@ const router = createRouter({
   ],
 })
 
+axios.defaults.baseURL = `${location.protocol}//${location.hostname}:${SERVER_PORT}`
 window.axios = axios
 window.moment = moment
 
